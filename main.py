@@ -5,6 +5,16 @@ def main():
     ########################################
     """
 
+    number = None
+    while number is None:
+        user_input = input("Enter a numeric value: ")
+        try:
+            number = int(user_input)
+        except ValueError:
+            print("Invalid input. Please enter a numeric value.")
+        else:
+            print(number)
+
     ########################################
     # Do not delete the return statement
     ########################################
